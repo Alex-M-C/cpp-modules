@@ -2,7 +2,7 @@
 
 Contact::Contact(){}
 
-Contact::Contact(char *firstName, char *lastName, char *nickName, char *phone, char *darkestSecret) {
+Contact::Contact(std::string firstName, std::string lastName, std::string nickName, std::string phone, std::string darkestSecret) {
     this->firstName = firstName;
     this->lastName = lastName;
     this->nickName= nickName;
@@ -10,22 +10,22 @@ Contact::Contact(char *firstName, char *lastName, char *nickName, char *phone, c
     this->darkestSecret = darkestSecret;
 }
 
-char *Contact::getFirstName() {
+std::string Contact::getFirstName() const {
     return firstName;
 }
 
-char *Contact::getLastName() {
+std::string Contact::getLastName() const {
     return lastName;
 }
 
-char *Contact::getNickName() {
+std::string Contact::getNickName() const {
     return nickName;
 }
 
-char *Contact::getPhone() {
+std::string Contact::getPhone() const {
     return phone;
 }
 
-char *Contact::getDarkestSecret() {
+std::string Contact::getDarkestSecret() const {
     return darkestSecret;
 }
