@@ -19,6 +19,10 @@ int	main(int argc, char **argv) {
     while (true)
     {
         std::getline(std::cin, action);
+        if (std::cin.eof()) {
+            std::cout << "\nEOF detected. Goodbye!" << std::endl;
+            break; 
+        }
         if (action.compare("ADD") == 0) {
             if (pb.addContact() == -1) {
                 std::cout << "Empty field detected, canceling operation...;" << std::endl;
