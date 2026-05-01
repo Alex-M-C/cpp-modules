@@ -13,7 +13,7 @@ $(NAME): $(OBJECTS)
 	$(CXX) $(CXXFLAGS) $(OBJECTS) -o $(NAME)
 
 %.o: %.cpp
-	$(CXX) $(CFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
 	rm -rf $(OBJECTS)
