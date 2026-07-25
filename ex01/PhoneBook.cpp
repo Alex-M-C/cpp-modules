@@ -1,4 +1,3 @@
-
 #include "PhoneBook.hpp"
 
 PhoneBook::PhoneBook() {
@@ -102,7 +101,7 @@ int PhoneBook::searchContact() {
               << std::setw(10) << "Last name" << "|" 
               << std::setw(10) << "Nickname" << "|" << std::endl;
     std::cout << "+-------------------------------------------+" << std::endl;
-    for (size_t i = 0; i < nContacts; i++)
+    for (size_t i = 0; i < (size_t)nContacts; i++)
     {
         std::cout << "|" << std::setw(10) << i << "|";
         data = contacts[i].getFirstName();
@@ -124,7 +123,8 @@ int PhoneBook::searchContact() {
             std::cout << "Index must be a positive number" << std::endl;
             continue;
         }
-        wantedIndex = std::stoi(data);
+        std::istringstream iss(data);
+        iss >> wantedIndex;
         if (wantedIndex < 0 || wantedIndex > nContacts - 1) {
             std::cout << "Index must be a number between 0 and " << nContacts - 1 << std::endl;
             continue;

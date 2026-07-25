@@ -10,7 +10,7 @@ void printPrompt() {
               << "EXIT: The program quits and the contacts are lost forever!" << std::endl;
 }
 
-int	main(int argc, char **argv) {
+int	main() {
     PhoneBook pb;
     std::string action;
 

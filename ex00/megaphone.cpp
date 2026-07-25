@@ -6,7 +6,7 @@ int	main(int argc, char **argv) {
         return 0;
     }
 
-    for (size_t i = 1; i < argc; i++) {
+    for (size_t i = 1; i < (size_t)argc; i++) {
 		
 		for (size_t j = 0; argv[i][j]; j++) {
 			std::cout << (char)std::toupper(argv[i][j]);
