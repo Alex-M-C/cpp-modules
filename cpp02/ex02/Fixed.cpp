@@ -18,8 +18,7 @@ Fixed::Fixed(const Fixed& fixed) {
 	this->value = fixed.getRawBits();
 }
 
-Fixed& Fixed::operator=(const Fixed& fixed)
-{
+Fixed& Fixed::operator=(const Fixed& fixed) {
 	if (this != &fixed) {
 		this->value = fixed.getRawBits();
 	}
