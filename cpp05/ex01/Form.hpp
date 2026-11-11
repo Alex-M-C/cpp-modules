@@ -7,26 +7,26 @@
 class Bureaucrat;
 
 class Form {
-    protected:
-        const std::string name;
-        bool _signed;
-        const int gradeSign;
-        const int gradeExec;
-    public:
-        Form();
-        Form(const std::string name, const int gradeSign, const int gradeExec);
-        Form(const Form &form);
-        Form &operator=(const Form &form);
-        ~Form();
+	private:
+		const std::string name;
+		bool _signed;
+		const int gradeSign;
+		const int gradeExec;
+	public:
+		Form();
+		Form(const std::string name, const int gradeSign, const int gradeExec);
+		Form(const Form &form);
+		Form &operator=(const Form &form);
+		~Form();
 
-        std::string getName() const;
-        bool getSigned() const;
-        int getGradeSign() const;
-        int getGradeExec() const;
+		std::string getName() const;
+		bool getSigned() const;
+		int getGradeSign() const;
+		int getGradeExec() const;
 
-        void beSigned(const Bureaucrat &bureaucrat);
+		void beSigned(const Bureaucrat &bureaucrat);
 
-        class GradeTooHighException : public std::exception {
+		class GradeTooHighException : public std::exception {
 			public:
 				virtual const char* what() const throw() {
 					return ("Grade can't be higher than 1");
@@ -38,7 +38,7 @@ class Form {
 					return ("Grade is too low");
 				}
 		};
-        class FormAlreadySignedException : public std::exception {
+		class FormAlreadySignedException : public std::exception {
 			public:
 				virtual const char* what() const throw() {
 					return ("Form is already signed");
