@@ -1,4 +1,4 @@
-# 🚀 42 C++ Modules (CPP 00 - CPP 04)
+# 🚀 42 C++ Modules (CPP 00 - CPP 05)
 
 [ 🇪🇸 Español ] | [ 🇬🇧 English ](README_EN.md)
 
@@ -23,6 +23,7 @@ Todos los proyectos han sido compilados y testeados bajo las siguientes condicio
 | **CPP Module 02** | Sobrecarga de Operadores, Polimorfismo Ad-hoc, Forma Canónica Ortodoxa, Representación de Números en Punto Fijo. | [`/cpp02`](./cpp02) |
 | **CPP Module 03** | Herencia Simple y Múltiple, Jerarquías de Clases, Orden de Construcción/Destrucción, Problema del Diamante (`virtual inheritance`). | [`/cpp03`](./cpp03) |
 | **CPP Module 04** | Polimorfismo de Subtipos, Enlace Dinámico (`virtual`), Copias Profundas (*Deep Copies*), Clases Abstractas e Interfaces. | [`/cpp04`](./cpp04) |
+| **CPP Module 05** | Excepciones (`try/catch/throw`), Clases Abstractas, Punteros a Funciones Miembro, Patrón Factory. | [`/cpp05`](./cpp05) |
 
 ---
 
@@ -36,5 +37,6 @@ Cada directorio contiene los ejercicios correspondientes junto a su documentaci�
 ├── cpp02/          # Módulo 02: Forma Canónica y Sobrecarga
 ├── cpp03/          # Módulo 03: Herencia
 ├── cpp04/          # Módulo 04: Polimorfismo y Clases Abstractas
+├── cpp05/          # Módulo 05: Repetición y Excepciones
 ├── README.md       # Documentación global (Español)
 └── README_EN.md    # Global documentation (English)

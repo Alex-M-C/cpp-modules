@@ -1,4 +1,4 @@
-# 🚀 42 C++ Modules (CPP 00 - CPP 04)
+# 🚀 42 C++ Modules (CPP 00 - CPP 05)
 
 [ 🇪🇸 Español ](README.md) | [ 🇬🇧 English ]
 
@@ -23,6 +23,7 @@ All projects are compiled and tested under the following conditions:
 | **CPP Module 02** | Operator Overloading, Ad-hoc Polymorphism, Orthodox Canonical Form, Fixed-Point Number Logic. | [`/cpp02`](./cpp02) |
 | **CPP Module 03** | Single and Multiple Inheritance, Class Hierarchies, Construction/Destruction Order, The Diamond Problem (`virtual inheritance`). | [`/cpp03`](./cpp03) |
 | **CPP Module 04** | Subtype Polymorphism, Dynamic Binding (`virtual`), Deep Copies, Abstract Classes & Interfaces. | [`/cpp04`](./cpp04) |
+| **CPP Module 05** | Exceptions (`try/catch/throw`), Abstract Classes, Pointers to Member Functions, Factory Pattern. | [`/cpp05`](./cpp05) |
 
 ---
 
@@ -36,5 +37,6 @@ Each directory contains the respective exercises alongside detailed documentatio
 ├── cpp02/          # Module 02: Canonical Form & Overloading
 ├── cpp03/          # Module 03: Inheritance
 ├── cpp04/          # Module 04: Polymorphism & Abstract Classes
+├── cpp05/          # Module 05: Repetition and Exceptions
 ├── README.md       # Global documentation (Spanish)
 └── README_EN.md    # Global documentation (English)
